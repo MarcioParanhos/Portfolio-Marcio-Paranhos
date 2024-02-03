@@ -1,0 +1,159 @@
+@media (max-width: 1199px) {
+
+    .aside {
+        left: -270px;
+    }
+
+    .aside.open {
+        left: 0;
+    }
+
+    .aside .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .nav-toggler.open {
+        left: 280px;
+    }
+
+    .section {
+        left: 0;
+    }
+
+    .section.open {
+        left: 270px;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .contact .contact-info-item,
+    .portifolio .portifolio-item,
+    .service .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home-img {
+        display: none;
+    }
+}
+
+@media (max-width: 856px) {
+
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portifolio .portifolio-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 788px) {
+
+    .service .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 412px) {
+
+    .home {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .home .home-info {
+        text-align: center;
+    }
+
+    .home .home-info a:last-child {
+        margin-top: 10px;
+    }
+
+    h3.hello {
+        font-size: 20px;
+        text-align: start;
+    }
+
+    h3.hello span {
+        font-size: 32px;
+
+    }
+
+    h3.my-profession {
+        font-size: 18px;
+        margin: 15px 0;
+        text-align: start;
+    }
+
+    .home .home-info p {
+        flex: 0 0 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .style-switcher {
+        top: 20px !important;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    h3.hello span {
+        font-size: 22px;
+
+    }
+
+    h3.hello span {
+        font-size: 25px;
+
+    }
+
+    .style-switcher {
+        top: 10px !important;
+    }
+
+
+    .section-title h2 {
+        margin-top: 20px;
+        font-size: 20px;
+
+    }
+    
+    .about .about-content .complementar-educatio,
+    .about .about-content .education,
+    .about .about-content .experience {
+        padding: 0;
+    }
+
+    .about .about-content h3.title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about .about-content .timeline .timeline-text {
+        font-size: 12px;
+    }
+
+
+}
