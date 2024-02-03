@@ -17,7 +17,7 @@
     .aside .nav-toggler.open {
         left: auto;
         right: auto;
-        top: 600px;
+        top: 800px;
     }
 
     .section {
@@ -78,6 +78,16 @@
 }
 
 @media (max-width: 412px) {
+
+    .aside .nav-toggler {
+        transition: none;
+    }
+
+    .aside .nav-toggler.open {
+        left: auto;
+        right: auto;
+        top: 600px;
+    }
 
     .home {
         padding-left: 20px;
