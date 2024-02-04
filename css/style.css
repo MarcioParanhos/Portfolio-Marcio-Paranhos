@@ -182,7 +182,7 @@ ul {
 
 .aside .logo {
     position: absolute;
-    top: 50px;
+    top: 10px;
     font-size: 30px;
     text-transform: capitalize;
 }
@@ -635,7 +635,7 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner .icon .fa {
+.service .service-item .service-item-inner .icon .fa-brands {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
@@ -646,7 +646,7 @@ h3.my-profession {
     background-color: var(--skin-color);
 }
 
-.service .service-item .service-item-inner:hover .icon .fa {
+.service .service-item .service-item-inner:hover .icon .fa-brands {
     font-size: 25px;
     color: #fbf8f3;
 }
@@ -658,12 +658,24 @@ h3.my-profession {
     font-weight: 700;
     text-transform: capitalize;
 }
+.service .service-item .service-item-inner h5 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: var(--text-black-700);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--skin-color);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.service .service-item .service-item-inner p {
+.service .service-item .service-item-inner ul li {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
 }
+
 
 /* Portifolio */
 .portifolio .container {
