@@ -1,8 +1,29 @@
+@media (max-width: 2000px) {
+
+    .card__title {
+        font-size: 12px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .card__technologies {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .card__button {
+        padding: 6px;
+        width: 10%;
+    }
+
+}
+
 @media (max-width: 1199px) {
 
     .aside {
         left: -900px;
         width: 100%;
+        
     }
 
     .aside.open {
@@ -32,6 +53,7 @@
         display: block;
         margin-left: 0;
     }
+   
 }
 
 @media (max-width: 991px) {
@@ -51,6 +73,7 @@
     .home .home-img {
         display: none;
     }
+    
 }
 
 @media (max-width: 856px) {
@@ -65,7 +88,6 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-
 }
 
 @media (max-width: 788px) {
@@ -74,7 +96,7 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-
+   
 }
 
 @media (max-width: 412px) {
