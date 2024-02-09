@@ -55,13 +55,15 @@
                                 aprimorar os meus conhecimentos em front-end, Me considero autodidata e muito aplicado
                                 nos estudos, oque me leva a estar em constante desenvolvimento de minhas habilidades
                                 interpessoais e técnicas.</p>
-                            <a target="_blank" href="https://wa.me/5571987898846" class="btn hire-me"><i
+                            <a title="WatsApp" target="_blank" href="https://wa.me/5571987898846" class="btn hire-me"><i
                                     class="fa-brands fa-whatsapp"></i></a>
-                            <a target="_blank" href="https://www.instagram.com/marcio_winicius/" class="btn hire-me"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/marcio-paranhos-080106218/"
-                                class="btn hire-me"><i class="fa-brands fa-linkedin"></i></a>
-                            <a target="_blank" href="./files/CURRICULO MARCIO PARANHOS.pdf" class="btn">Download CV</a>
+                            <a title="Instagram" target="_blank" href="https://www.instagram.com/marcio_winicius/"
+                                class="btn hire-me"><i class="fa-brands fa-instagram"></i></a>
+                            <a title="Linkedin" target="_blank"
+                                href="https://www.linkedin.com/in/marcio-paranhos-080106218/" class="btn hire-me"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a title="Curriculo" target="_blank" href="./files/CURRICULO MARCIO PARANHOS.pdf"
+                                class="btn">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/hero.jpg" alt="">
@@ -410,8 +412,13 @@
                                     <i class="fa-brands fa-wordpress"></i>
                                 </div>
                                 <h4>Wordpress</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi error voluptatum
-                                    nesciunt?</p>
+                                <h5>Conhecimentos</h5>
+                                <ul>
+                                    <li>Criação de Landing Pages</li>
+                                    <li>Criação de Blog Pessoal / Comercial</li>
+                                    <li>E-commerce</li>
+                                    <li>Pagina de Divulgações</li>
+                                </ul>
                             </div>
                         </div>
                         <!-- ===== Service item End ===== -->
@@ -473,57 +480,111 @@
                             <h2>Meus Projetos</h2>
                         </div>
                     </div>
+                    <div class="technologies-selected">
+                        <button id="ALL" class="btn" onclick="viewProjectByTechnologies('ALL')">TODOS</button>
+                        <button id="PHP" class="btn" onclick="viewProjectByTechnologies('PHP')">PHP</button>
+                        <button id="JS" class="btn" onclick="viewProjectByTechnologies('JS')">JavaScript</button> 
+                    </div>
                     <div class="row">
                         <!-- ===== Portifolio Item Start ===== -->
-                        <div class="portifolio-item padd-15">
-                            <div class="portifolio-item-inner shadow-dark">
-                                <div class="portifolio-img">
-                                    <img src="images/portfolio/portfolio-1.jpg" alt="">
+                        <div class="card portifolio-item PHP">
+                            <img src="images/portfolio/CPC.png" alt="">
+                            <p class="preject-type">PROJETO PESSOAL</p>
+                            <div class="card__content">
+                                <div class="card__technologies">
+                                    <img src="./images/technologies/php.png" alt="">
+                                    <img src="./images/technologies/js.png" alt="">
+                                    <img src="./images/technologies/icon-javascript.png" alt="">
+                                </div>
+                                <p class="card__title">CPC - CONTROLE DE PROGRAMAÇÃO E CARÊNCIA</p>
+
+                                <p class="card__description">O CPC é projetado para atender
+                                    de forma dinâmica e centralizada às demandas por informações, visando aprimorar o
+                                    desempenho e a agilidade na prestação de serviços. Com foco na eficiência, buscando
+                                    oferecer um ambiente onde as informações fluem de maneira ágil e precisa, garantindo
+                                    a excelência na tomada de decisões e no cumprimento de seus objetivos. </p>
+                                <div class="buttons">
+                                    <button class="card__button secondary"><a target="_blank"
+                                            href="https://www.loom.com/share/3e13a5e8b1954c0c873cecd91ffc9fe1"><i
+                                                class="fa-solid fa-laptop"></i></a></button>
+                                    <button class="card__button secondary"><a target="_blank"
+                                            href="https://github.com/MarcioParanhos/CPC---Controle-de-programa--o"><i
+                                                class="fa-brands fa-github"></i></a></button>
                                 </div>
                             </div>
                         </div>
                         <!-- ===== Portifolio Item End ===== -->
                         <!-- ===== Portifolio Item Start ===== -->
-                        <div class="portifolio-item padd-15">
-                            <div class="portifolio-item-inner shadow-dark">
-                                <div class="portifolio-img">
-                                    <img src="images/portfolio/portfolio-2.jpg" alt="">
+                        <div class="card portifolio-item PHP">
+                            <img src="images/portfolio/portfolio-2.jpg" alt="">
+                            <div class="card__content">
+                                <p class="card__title">CPC - CONTROLE DE PROGRAMAÇÃO E CARÊNCIA</p>
+                                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="buttons">
+                                    <button class="card__button secondary"><i class="fa-solid fa-laptop"></i></button>
+                                    <button class="card__button secondary"><i class="fa-brands fa-github"></i></button>
                                 </div>
                             </div>
                         </div>
                         <!-- ===== Portifolio Item End ===== -->
                         <!-- ===== Portifolio Item Start ===== -->
-                        <div class="portifolio-item padd-15">
-                            <div class="portifolio-item-inner shadow-dark">
-                                <div class="portifolio-img">
-                                    <img src="images/portfolio/portfolio-3.jpg" alt="">
+                        <div class="card portifolio-item JS">
+                            <img src="images/portfolio/portfolio-3.jpg" alt="">
+                            <div class="card__content">
+                                <p class="card__title">CPC - CONTROLE DE PROGRAMAÇÃO E CARÊNCIA</p>
+                                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="buttons">
+                                    <button class="card__button secondary"><i class="fa-solid fa-laptop"></i></button>
+                                    <button class="card__button secondary"><i class="fa-brands fa-github"></i></button>
                                 </div>
                             </div>
                         </div>
                         <!-- ===== Portifolio Item End ===== -->
                         <!-- ===== Portifolio Item Start ===== -->
-                        <div class="portifolio-item padd-15">
-                            <div class="portifolio-item-inner shadow-dark">
-                                <div class="portifolio-img">
-                                    <img src="images/portfolio/portfolio-4.jpg" alt="">
+                        <div class="card portifolio-item JS">
+                            <img src="images/portfolio/portfolio-4.jpg" alt="">
+                            <div class="card__content">
+                                <p class="card__title">CPC - CONTROLE DE PROGRAMAÇÃO E CARÊNCIA</p>
+                                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="buttons">
+                                    <button class="card__button secondary"><i class="fa-solid fa-laptop"></i></button>
+                                    <button class="card__button secondary"><i class="fa-brands fa-github"></i></button>
                                 </div>
                             </div>
                         </div>
                         <!-- ===== Portifolio Item End ===== -->
                         <!-- ===== Portifolio Item Start ===== -->
-                        <div class="portifolio-item padd-15">
-                            <div class="portifolio-item-inner shadow-dark">
-                                <div class="portifolio-img">
-                                    <img src="images/portfolio/portfolio-5.jpg" alt="">
+                        <div class="card portifolio-item PHP">
+                            <img src="images/portfolio/portfolio-5.jpg" alt="">
+                            <div class="card__content">
+                                <p class="card__title">CPC - CONTROLE DE PROGRAMAÇÃO E CARÊNCIA</p>
+                                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="buttons">
+                                    <button class="card__button secondary"><i class="fa-solid fa-laptop"></i></button>
+                                    <button class="card__button secondary"><i class="fa-brands fa-github"></i></button>
                                 </div>
                             </div>
                         </div>
                         <!-- ===== Portifolio Item End ===== -->
                         <!-- ===== Portifolio Item Start ===== -->
-                        <div class="portifolio-item padd-15">
-                            <div class="portifolio-item-inner shadow-dark">
-                                <div class="portifolio-img">
-                                    <img src="images/portfolio/portfolio-6.jpg" alt="">
+                        <div class="card portifolio-item PHP">
+                            <img src="images/portfolio/portfolio-6.jpg" alt="">
+                            <div class="card__content">
+                                <p class="card__title">CPC - CONTROLE DE PROGRAMAÇÃO E CARÊNCIA</p>
+                                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="buttons">
+                                    <button class="card__button secondary"><i class="fa-solid fa-laptop"></i></button>
+                                    <button class="card__button secondary"><i class="fa-brands fa-github"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -627,7 +688,6 @@
         <!-- ===== Main Content End ===== -->
     </div>
     <!-- ====== Main Container End ====== -->
-
     <!-- ===== Style Switcher Start ===== -->
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">

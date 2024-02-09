@@ -41,8 +41,8 @@ for (let i = 0; i < totalNavList; i++) {
 
         showSection(this)
 
-        if(window.innerWidth < 1200) {
-            
+        if (window.innerWidth < 1200) {
+
             asideSectionTogglerBtn()
 
         }
@@ -77,10 +77,40 @@ function asideSectionTogglerBtn() {
     aside.classList.toggle("open")
     navTogglerBtn.classList.toggle("open")
 
-    for(let i=0; i<totalSection; i++) {
+    for (let i = 0; i < totalSection; i++) {
 
         allSection[i].classList.toggle("open")
 
     }
 
+}
+
+function viewProjectByTechnologies(technology) {
+    const jsElements = document.querySelectorAll(".JS");
+    const phpElements = document.querySelectorAll(".PHP");
+
+    if (technology == "PHP") {
+        jsElements.forEach(element => {
+            element.classList.add("hidden");
+        });
+        phpElements.forEach(element => {
+            element.classList.remove("hidden");
+        });
+
+    } else if (technology == "JS") {
+        phpElements.forEach(element => {
+            element.classList.add("hidden");
+        });
+        jsElements.forEach(element => {
+            element.classList.remove("hidden");
+        });
+
+    } else {
+        phpElements.forEach(element => {
+            element.classList.remove("hidden");
+        });
+        jsElements.forEach(element => {
+            element.classList.remove("hidden");
+        });
+    }
 }
