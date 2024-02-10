@@ -86,31 +86,17 @@ function asideSectionTogglerBtn() {
 }
 
 function viewProjectByTechnologies(technology) {
-    const jsElements = document.querySelectorAll(".JS");
-    const phpElements = document.querySelectorAll(".PHP");
+    const elements = document.querySelectorAll(".JS, .PHP, .SITE");
 
-    if (technology == "PHP") {
-        jsElements.forEach(element => {
-            element.classList.add("hidden");
-        });
-        phpElements.forEach(element => {
+    elements.forEach(element => {
+        if (technology === "PHP") {
+            element.classList.toggle("hidden", !element.classList.contains("PHP"));
+        } else if (technology === "JS") {
+            element.classList.toggle("hidden", !element.classList.contains("JS"));
+        } else if (technology === "SITE") {
+            element.classList.toggle("hidden", !element.classList.contains("SITE"));
+        } else {
             element.classList.remove("hidden");
-        });
-
-    } else if (technology == "JS") {
-        phpElements.forEach(element => {
-            element.classList.add("hidden");
-        });
-        jsElements.forEach(element => {
-            element.classList.remove("hidden");
-        });
-
-    } else {
-        phpElements.forEach(element => {
-            element.classList.remove("hidden");
-        });
-        jsElements.forEach(element => {
-            element.classList.remove("hidden");
-        });
-    }
+        }
+    });
 }
